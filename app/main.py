@@ -10,7 +10,7 @@ api_key=os.getenv("GEMINI_API_KEY")  # Retrieve the API key from environment var
 
 app = FastAPI()
 
-@app.get("/hello")
+@app.get("/")
 def hello_world() -> str:
     return "hello world"
 
