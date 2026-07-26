@@ -24,7 +24,8 @@ jobs:
       - name: Run tests
         working-directory: app
         env:
-          PYTHONPATH: .
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONPATH: app
         run: |
           pytest
       - name: Build docker image
