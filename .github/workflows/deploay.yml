@@ -25,4 +25,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push yene1216/fastapi-agent:latest
+          docker push yenesew/fastapi-agent:latest
